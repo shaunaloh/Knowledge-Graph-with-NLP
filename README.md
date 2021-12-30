@@ -18,4 +18,4 @@ Entity-relation pairs (subject-verb-object triples) were extracted from each tex
 NetworkX and Pyvis python packages were used to create an interactive knowledge graph (refer to sample: `nx.html`), to visualise the relationships between entities. An example DOCRED text 'A Charlie Brown Christmas' was used to illustrate how triples were generated and stored in a knowledge graph.
 
 ## Bash Script for Multi-File Processing
-A bash shell script `run.sh` was written to parallel process all 3,053 DOCRED text files and generate the corresponding triples from each text.
+A bash shell script `run.sh` was written to parallel process all 3,053 DOCRED text files and generate the corresponding triples from each text. To run the pipeline via Git Bash, navigate into the bash script file directory using 'cd <file_path>' and execute: './run.sh'. 
