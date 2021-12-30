@@ -17,10 +17,10 @@ def coref_resolution(text):
     This function runs through each text and replaces all coreferences within each text.
 
     Arguments:
-    text (str): input text
+        text (str): input text
 
     Returns:
-    coref_doc (str): output text with all coreferences replaced.
+        coref_doc (str): output text with all coreferences replaced.
     """
     
     nlp = spacy.load('en_core_web_trf')
@@ -44,10 +44,10 @@ def get_triples(sent):
     to store all entity-pairs and their corresponding relations.
 
     Arguments:
-    sent (str): input sentence
+        sent (str): input sentence
 
     Returns:
-    kg_df (dataframe): dataframe of all triples found within the input sentence
+        kg_df (pandas.DataFrame): dataframe of all triples found within the input sentence
     """
     
     sent=coref_resolution(text)
@@ -67,7 +67,8 @@ def get_triples(sent):
     matcher.add("SVO", [pattern])  
     matches = matcher(doc)
    
-    match_ids=[]; token_ids=[];
+    match_ids=[]
+    token_ids=[]
        
     for i in range(len(matches)):
         match_ids.append(matches[i][0])
@@ -91,10 +92,10 @@ def dashboard(kg_df):
     in HTML, showing all nodes (subject-object pairs) and edges (relations).
 
     Arguments:
-    kg_df (dataframe): dataframe of triples generated from text file
+        kg_df (pandas.DataFrame): dataframe of triples generated from text file
 
     Returns:
-    net (network): a network graph visualisation of all connecting nodes and edges
+        net (network): a network graph visualisation of all connecting nodes and edges
     """
 
     source_list = kg_df["source"].values.tolist()
