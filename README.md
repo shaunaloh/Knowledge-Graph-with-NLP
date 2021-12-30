@@ -9,12 +9,12 @@ DOCRED, a dataset constructed from Wikipedia and Wikidata, was used as the datas
 ### Coreference Resolution
 Co-references in each co-reference chain were resolved and replaced to follow a single referent. 
 
-### Generating Entity-Relation Pairs 
+### Generate Entity-Relation Pairs 
 Entity-relation pairs (subject-verb-object triples) were extracted from each text. 
 - Using spaCy's NLP pipeline, entities and noun chunks were merged to form single entities. This allows compound words or modifiers to be viewed as a single subject/object.
 - spaCy's DependencyMatcher was used to match the pattern required of the SVO triple.
 
-### Visualising Knowledge Graph
+### Knowledge Graph Visualisation
 NetworkX and Pyvis python packages were used to create an interactive knowledge graph (refer to sample: '**nx.html**'), to visualise the relationships between entities. An example DOCRED text 'A Charlie Brown Christmas' was used to illustrate how triples were generated and stored in a knowledge graph.
 
 ## Bash Script for Multi-File Processing
