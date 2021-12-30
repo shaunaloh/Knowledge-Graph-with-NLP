@@ -13,7 +13,7 @@ Install Coreferee from the command line by typing:
 python -m pip install coreferee
 python -m coreferee install en
 ```
-The coreference resolution code works on spaCy models en_core_web_trf and en_core_web_lg. Install both models ifrom the command line by typing:
+The coreference resolution code works on spaCy models `en_core_web_trf` and `en_core_web_lg`. Install both models ifrom the command line by typing:
 
 ``` 
 -m spacy download en_coref_lg
