@@ -7,7 +7,12 @@
 `knowledge_graph.py` was written to execute the following:
 
 ### Coreference Resolution
-Using python package Coreferee, co-references in each co-reference chain were resolved and replaced to follow a single referent. The coreference resolution code works on spaCy models en_core_web_trf and en_core_web_lg. Install both models in anaconda prompt using python` -m spacy download en_coref_lg` and `-m spacy download en_coref_trf`.
+Using python package Coreferee, co-references in each co-reference chain were resolved and replaced to follow a single referent. 
+Install Coreferee from the command line by typing: 
+`python -m pip install coreferee
+python -m coreferee install en`
+
+The coreference resolution code works on spaCy models en_core_web_trf and en_core_web_lg. Install both models ifrom the command line using python` -m spacy download en_coref_lg` and `-m spacy download en_coref_trf`.
 
 ### Generate Entity-Relation Pairs 
 Entity-relation pairs (subject-verb-object triples) were extracted from each text. 
