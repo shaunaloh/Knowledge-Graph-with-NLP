@@ -11,7 +11,7 @@ Co-references in each co-reference chain were resolved and replaced to follow a 
 
 ### Generating Entity-Relation Pairs 
 Entity-relation pairs (subject-verb-object triples) were extracted from each text. 
-- entities and noun chunks were merged to form single entities. This allows compound words or modifiers to be viewed as a single subject/object.
+- Using spaCy's NLP pipeline, entities and noun chunks were merged to form single entities. This allows compound words or modifiers to be viewed as a single subject/object.
 - spaCy's DependencyMatcher was used to match the pattern required of the SVO triple.
 
 ### Visualising Knowledge Graph
