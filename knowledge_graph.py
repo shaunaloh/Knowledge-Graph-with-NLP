@@ -4,7 +4,6 @@ from IPython.core.display import HTML
 
 import coreferee
 import networkx as nx
-from nltk import sent_tokenize
 import pandas as pd
 from pyvis.network import Network
 import spacy
