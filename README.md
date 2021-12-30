@@ -1,7 +1,7 @@
 # Knowledge-Graph-with-NLP
 
 ## Data Extraction
-DOCRED, a dataset constructed from Wikipedia and Wikidata, was used as the dataset for this project. It comprises of 3,053 text files obtained from https://github.com/thunlp/DocRED. The text files were converted from `train_annotated.json` using the code written in `extracting_train_data.ipynb`.
+[DOCRED](https://github.com/thunlp/DocRED) was used as the dataset for this project. It is a large-scale, document level dataset constructed from Wikipedia and Wikidata, comprising of 3,053 text files. The text files were converted from `train_annotated.json` using the code written in `extracting_train_data.ipynb`.
 
 ## Knowledge Graph Implementation
 `knowledge_graph.py` was written to execute the following:
