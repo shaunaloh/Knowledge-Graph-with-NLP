@@ -15,7 +15,7 @@ Entity-relation pairs (subject-verb-object triples) were extracted from each tex
 - spaCy's DependencyMatcher was used to match the pattern required of the SVO triple.
 
 ### Visualising Knowledge Graph
-NetworkX and Pyvis python packages were used to create an interative knowledge graph (refer to sample: '**nx.html**'), to visualise the relationships between entities. A example DOCRED text 'A Charlie Brown Christmas' was used to illustrate how triples were generated and stored in a knowledge graph.
+NetworkX and Pyvis python packages were used to create an interative knowledge graph (refer to sample: '**nx.html**'), to visualise the relationships between entities. An example DOCRED text 'A Charlie Brown Christmas' was used to illustrate how triples were generated and stored in a knowledge graph.
 
 ### Bash Script for Multi-File Processing
 A bash shell script '**run.sh**' was written to parallel process all 3,053 DOCRED text files and generate the corresponding triples from each text.
