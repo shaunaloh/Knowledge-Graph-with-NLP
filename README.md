@@ -7,7 +7,7 @@ DOCRED, a dataset constructed from Wikipedia and Wikidata, was used as the datas
 **knowledge_graph.py** was written to execute the following:
 
 ### Coreference Resolution
-Co-references in each co-reference chain were resolved and replaced to follow a single referent. 
+Using python package Coreferee, co-references in each co-reference chain were resolved and replaced to follow a single referent. 
 
 ### Generate Entity-Relation Pairs 
 Entity-relation pairs (subject-verb-object triples) were extracted from each text. 
